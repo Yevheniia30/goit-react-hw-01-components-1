@@ -1,6 +1,8 @@
 import UserProfile from "./components/UserProfile";
 import UserprofileList from "./components/UserProfileList";
 import users from "./users.json";
+import Statistics from "./components/Statistics";
+import statisticsData from "./statistical-data.json";
 
 // const user1 = user[1];
 
