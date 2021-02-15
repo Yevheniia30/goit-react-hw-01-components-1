@@ -1,20 +1,15 @@
 import UserProfile from "./components/UserProfile";
-import user from "./user.json";
+import UserprofileList from "./components/UserProfileList";
+import users from "./users.json";
 
-const user1 = user[1];
+// const user1 = user[1];
 
 function App() {
+  // const isOnline = false;
   return (
     <div className="App">
-      <UserProfile
-        name={user1.name}
-        tag={user1.tag}
-        location={user1.location}
-        avatar={user1.avatar}
-        followers={user1.stats.followers}
-        views={user1.stats.views}
-        likes={user1.stats.likes}
-      />
+      {/* <div>{isOnline ? "Online" : "Offline"}</div> */}
+      <UserprofileList users={users} />
     </div>
   );
 }

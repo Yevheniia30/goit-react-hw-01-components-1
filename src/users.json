@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "name": "Jacques Gluke",
     "tag": "jgluke",
     "location": "Ocho Rios, Jamaica",
@@ -11,14 +12,15 @@
     }
   },
   {
+    "id": "2",
     "name": "Bobby Brown",
     "tag": "bigbob",
     "location": "LA, USA",
-    "avatar": "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg",
+    "avatar": "https://www.flaticon.com/premium-icon/icons/svg/3006/3006884.svg",
     "stats": {
-      "followers": 12003,
-      "views": 10027,
-      "likes": 20000
+      "followers": 6023,
+      "views": 5027,
+      "likes": 2450
     }
   }
 ]
