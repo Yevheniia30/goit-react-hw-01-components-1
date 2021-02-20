@@ -1,7 +1,15 @@
 import PropTypes from "prop-types";
 import defaultImage from "../../images/default.jpg";
 
-function UserProfile({ name, tag, location, avatar, followers, views, likes }) {
+const UserProfile = ({
+  user: {
+    avatar,
+    name,
+    tag,
+    location,
+    stats: { followers, views, likes },
+  },
+}) => {
   return (
     <div className="profile">
       <div className="description">
@@ -32,20 +40,24 @@ function UserProfile({ name, tag, location, avatar, followers, views, likes }) {
       </ul>
     </div>
   );
-}
+};
 
 UserProfile.defaultProps = {
   avatar: defaultImage,
 };
 
 UserProfile.propTypes = {
-  name: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
+  user: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }),
+  }),
 };
 
 export default UserProfile;

@@ -1,27 +1,25 @@
-// import UserProfile from "./components/UserProfile";
-import UserprofileList from "./components/UserProfile/UserProfileList";
-import users from "./users.json";
-import StatisticsList from "./components/Statistics/StatisticsList";
-// import Statistics from "./components/Statistics";
+import user from "./user.json";
 import stats from "./stats.json";
-// import StatisticsList from "./components/Statistics/StatisticsList";
+import friends from "./friends.json";
+import transactions from "./transactions.json";
 
-// const user1 = user[1];
+import UserProfile from "./components/UserProfile";
+import StatisticsList from "./components/Statistics/StatisticsList";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory";
 
 function App() {
   // const isOnline = false;
   return (
     <div className="App">
       {/* <div>{isOnline ? "Online" : "Offline"}</div> */}
-      <UserprofileList users={users} />
-      {/* <Statistics title="Upload stats" /> */}
-      <StatisticsList
-        title="Upload stats"
-        stats={stats}
-        // id={statisticalData.id}
-        // label={statisticalData.label}
-        // percentage={statisticalData.percentage}
-      />
+      <UserProfile user={user} />
+
+      <StatisticsList title="Upload stats" stats={stats} />
+
+      <FriendList friends={friends} />
+
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 }

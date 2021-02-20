@@ -4,8 +4,8 @@ import Statistics from ".";
 const StatisticsList = ({ title, stats }) => {
   return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul>
+      {title && <h2 className="title">{title}</h2>}
+      <ul className="stat-list">
         {stats.map((stat) => (
           <Statistics key={stat.id} stat={stat} />
         ))}
@@ -23,6 +23,10 @@ StatisticsList.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
+};
+
+StatisticsList.defaultProps = {
+  stats: [],
 };
 
 export default StatisticsList;
