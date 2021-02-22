@@ -3,14 +3,17 @@ import Statistics from ".";
 
 const StatisticsList = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
-        {stats.map((stat) => (
-          <Statistics key={stat.id} stat={stat} />
-        ))}
-      </ul>
-    </section>
+    <div className="taskWrapper">
+      <h2 className="taskTitle">Task 2 "Statistics"</h2>
+      <section className="statistics">
+        {title && <h2 className="title">{title}</h2>}
+        <ul className="stat-list">
+          {stats.map((stat) => (
+            <Statistics key={stat.id} stat={stat} />
+          ))}
+        </ul>
+      </section>
+    </div>
   );
 };
 

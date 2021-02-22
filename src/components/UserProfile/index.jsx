@@ -11,7 +11,8 @@ const UserProfile = ({
   },
 }) => {
   return (
-    <div className="profile">
+    <div className="profile taskWrapper">
+      <h2 className="taskTitle">Task 1 "UserProfile"</h2>
       <div className="description">
         <img
           src={avatar ?? defaultImage}

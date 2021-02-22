@@ -9,17 +9,14 @@ import FriendList from "./components/FriendList/FriendList";
 import TransactionHistory from "./components/TransactionHistory";
 
 function App() {
-  // const isOnline = false;
   return (
     <div className="App">
-      {/* <div>{isOnline ? "Online" : "Offline"}</div> */}
-      <UserProfile user={user} />
-
-      <StatisticsList title="Upload stats" stats={stats} />
-
-      <FriendList friends={friends} />
-
-      <TransactionHistory transactions={transactions} />
+      <div className="wrapper">
+        <UserProfile user={user} />
+        <StatisticsList title="Upload stats" stats={stats} />
+        <FriendList friends={friends} />
+        <TransactionHistory transactions={transactions} />
+      </div>
     </div>
   );
 }

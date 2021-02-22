@@ -1,11 +1,17 @@
+import s from "./FriendList.module.css";
 import defaultImage from "../../images/default.jpg";
+console.log(s);
 
 const FriendListItem = ({ friend: { isOnline, avatar, name } }) => {
   return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
+    <li className={s.item}>
+      <span
+        // className={s.status + " " + (isOnline ? s.online : s.offline)}
+        className={s.status}
+        style={{ backgroundColor: isOnline ? "green" : "red" }}
+      ></span>
       <img
-        className="avatar"
+        className={s.avatar}
         src={avatar ?? defaultImage}
         alt="User's avatar"
         width="48"
