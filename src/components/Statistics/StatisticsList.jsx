@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import Container from "../Container/Container";
 import Statistics from ".";
 
 const StatisticsList = ({ title, stats }) => {
   return (
-    <div className="taskWrapper">
+    <Container>
       <h2 className="taskTitle">Task 2 "Statistics"</h2>
       <section className="statistics">
         {title && <h2 className="title">{title}</h2>}
@@ -13,7 +14,7 @@ const StatisticsList = ({ title, stats }) => {
           ))}
         </ul>
       </section>
-    </div>
+    </Container>
   );
 };
 

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Container from "../Container/Container";
 import defaultImage from "../../images/default.jpg";
 
 const UserProfile = ({
@@ -11,7 +12,7 @@ const UserProfile = ({
   },
 }) => {
   return (
-    <div className="profile taskWrapper">
+    <Container>
       <h2 className="taskTitle">Task 1 "UserProfile"</h2>
       <div className="description">
         <img
@@ -39,7 +40,7 @@ const UserProfile = ({
           <span className="quantity">{likes}</span>
         </li>
       </ul>
-    </div>
+    </Container>
   );
 };
 

@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import TransactionItem from "./TransactionItem";
+import Container from "../Container/Container";
 import s from "./TransactionHistory.module.css";
 
 const TransactionHistory = ({ transactions }) => {
   return (
-    <div className="taskWrapper">
+    <Container>
       <h2 className="taskTitle">Task 4 "TransactionHistory"</h2>
       <table className={s.transactionHistory}>
         <thead>
@@ -20,7 +21,7 @@ const TransactionHistory = ({ transactions }) => {
           ))}
         </tbody>
       </table>
-    </div>
+    </Container>
   );
 };
 
