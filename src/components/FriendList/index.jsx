@@ -1,6 +1,5 @@
 import s from "./FriendList.module.css";
 import defaultImage from "../../images/default.jpg";
-console.log(s);
 
 const FriendListItem = ({ friend: { isOnline, avatar, name } }) => {
   return (

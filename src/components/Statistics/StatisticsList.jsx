@@ -1,14 +1,15 @@
 import PropTypes from "prop-types";
 import Container from "../Container/Container";
 import Statistics from ".";
+import s from "./StatisticsList.module.css";
 
 const StatisticsList = ({ title, stats }) => {
   return (
     <Container>
       <h2 className="taskTitle">Task 2 "Statistics"</h2>
-      <section className="statistics">
-        {title && <h2 className="title">{title}</h2>}
-        <ul className="stat-list">
+      <section className={s.statistics}>
+        {title && <h2 className={s.title}>{title}</h2>}
+        <ul className={s.statList}>
           {stats.map((stat) => (
             <Statistics key={stat.id} stat={stat} />
           ))}

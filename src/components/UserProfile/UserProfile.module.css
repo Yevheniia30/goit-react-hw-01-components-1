@@ -1,0 +1,29 @@
+.description {
+  text-align: center;
+  padding: 30px;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.stats {
+  list-style: none;
+  padding: 0;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.tag {
+  margin-bottom: 0;
+}
+.location {
+  margin-top: 0;
+}
+.label {
+  font-weight: bold;
+}
+.avatar {
+  background-color: #faf7fa;
+  border-radius: 5px;
+}

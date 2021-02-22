@@ -1,9 +1,19 @@
-const Statistics = ({ stat }) => {
-  return (
-    <li className="item">
-      <span className="label">{stat.label} </span>
+// import { clearConfigCache } from "prettier";
+import s from "./StatisticsList.module.css";
 
-      <span className="percentage">{stat.percentage} %</span>
+const Statistics = ({ stats, stat }) => {
+  return (
+    <li
+      className={s.item}
+      style={{
+        backgroundColor: `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${
+          Math.random() * 255
+        })`,
+      }}
+    >
+      <span className={s.label}>{stat.label} </span>
+
+      <span className={s.percentage}>{stat.percentage} %</span>
     </li>
   );
 };
